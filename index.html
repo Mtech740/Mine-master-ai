@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mines Predictor AI</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- TensorFlow.js -->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0"></script>
 </head>
 <body>
@@ -14,6 +15,13 @@
     <button onclick="resetGrid()">Reset</button>
     <button onclick="predict()">Predict</button>
   </div>
+
+  <!-- Scripts -->
   <script src="script.js"></script>
+  <script src="model.js"></script>
+
+  <!-- Eruda Console (for mobile debug) -->
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script>
 </body>
-  </html>
+</html>
